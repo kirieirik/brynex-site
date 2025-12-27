@@ -106,7 +106,6 @@ function GoogleAds() {
     'Geografisk målretting',
     'Enhets- og tidsjustering',
     'Månedlig rapport med innsikt',
-    'Strategimøte hver måned'
   ]
 
   const faq = [

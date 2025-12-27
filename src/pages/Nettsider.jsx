@@ -79,12 +79,9 @@ function Nettsider() {
     'Responsivt design for alle enheter',
     'SEO-grunnpakke med meta-tags og struktur',
     'Kontaktskjema med e-postvarsling',
-    'Google Analytics integrasjon',
     'SSL-sertifikat (HTTPS)',
     'Hastighetsoptimalisering',
-    'Sosiale medier integrasjon',
     'GDPR-tilpasset personvernerklæring',
-    'Opplæring i administrasjon',
     '30 dager support etter lansering'
   ]
 
@@ -212,7 +209,7 @@ function Nettsider() {
                 <h2>Alt dette er inkludert</h2>
                 <p>
                   Når du bestiller en nettside fra oss, får du en komplett pakke 
-                  som dekker alt du trenger for en vellykket lansering.
+                  som dekker alt du trenger for ett vellykket nettsted.
                 </p>
               </div>
             </FadeInLeft>

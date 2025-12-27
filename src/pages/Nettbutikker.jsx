@@ -31,7 +31,7 @@ function Nettbutikker() {
     {
       icon: Truck,
       title: 'Fraktintegrasjon',
-      description: 'Automatisk fraktkalkulator med integrasjon mot Posten, Postnord og flere.'
+      description: 'Automatisk fraktkalkulator med integrasjon mot Posten/Bring'
     },
     {
       icon: BarChart3,
@@ -41,12 +41,12 @@ function Nettbutikker() {
     {
       icon: RefreshCw,
       title: 'Automatisering',
-      description: 'Automatiske ordrebekreftelser, påminnelser og oppfølgingsmails.'
+      description: 'Automatiske ordrebekreftelser, påminnelser og oppfølgings e-poster til kunder.'
     },
     {
       icon: Users,
       title: 'Kundekontoer',
-      description: 'La kundene opprette konto for enklere kjøp og ordrehistorikk.'
+      description: 'La kundene opprette konto for enklere kjøp og ordrehistorikk med Google og Vipps Login.'
     }
   ]
 
@@ -58,16 +58,18 @@ function Nettbutikker() {
     'Relaterte produkter',
     'Rabattkoder og kampanjer',
     'Nyhetsbrev-integrasjon',
-    'Mobiloptimalisert checkout'
+    'Mobiloptimalisert checkout',
+    '**Vipps checkout og betaling',
+    '**Vipps brukeropprettelse',
+    '**Google Pay og login',
   ]
 
   const b2bFeatures = [
     'Kundegrupper med egne priser',
-    'Volumrabatter',
     'Kredittgrenser',
+    'Rabatt per merke, rolle eller kvantum',
+    'Godkjenning av ordre på ledernivå',
     'Bestillingslister',
-    'Fakturabetaling',
-    'Flerlagers-støtte',
     'ERP-integrasjon',
     'Godkjenningsflyt for ordrer'
   ]
@@ -110,7 +112,7 @@ function Nettbutikker() {
           </HeroText>
         </div>
       </section>
-
+      
       {/* Intro Section */}
       <section className="service-intro">
         <div className="container">

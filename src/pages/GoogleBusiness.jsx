@@ -75,16 +75,14 @@ function GoogleBusiness() {
     'Opplasting av bilder fra bedriften',
     'Oppsett av åpningstider og kontaktinfo',
     'Oppsett av tjenester/produkter',
-    'Første innlegg publisert',
     'Strategi for anmeldelser',
-    'Opplæring i administrasjon',
-    'Guide for å holde profilen oppdatert'
+    'Gjentakende vedlikehold av profilen dersom du ønsker det (valgfritt, men anbefalt)'
   ]
 
   const faq = [
     {
       q: 'Hva er forskjellen på Google Bedriftsprofil og en nettside?',
-      a: 'Google Bedriftsprofil er et gratis verktøy fra Google som viser bedriften din i Google Søk og Maps. En nettside er din egen plattform med mer kontroll og innhold. Ideelt sett har du begge deler.'
+      a: 'Google Bedriftsprofil er et verktøy fra Google som viser bedriften din i Google Søk og Maps. En nettside er din egen plattform med mer kontroll og innhold. Ideelt sett har du begge deler.'
     },
     {
       q: 'Koster Google Bedriftsprofil penger?',
@@ -92,11 +90,11 @@ function GoogleBusiness() {
     },
     {
       q: 'Hvor lang tid tar det å sette opp?',
-      a: 'Selve oppsettet tar 1-2 dager. Verifiseringen fra Google kan ta 1-2 uker hvis de sender et postkort (vanlig for nye bedrifter).'
+      a: 'Selve oppsettet tar 1-2 dager. Verifiseringen fra Google kan ta 1-2 uker (vanlig for nye bedrifter).'
     },
     {
       q: 'Kan jeg administrere profilen selv etterpå?',
-      a: 'Absolutt! Vi gir deg full opplæring og en enkel guide. Du kan oppdatere bilder, innlegg og svare på anmeldelser selv.'
+      a: 'Absolutt! Du står fritt til å redigere og endre hva enn du ønsker selv. Du kan oppdatere bilder, innlegg og svare på anmeldelser selv.'
     }
   ]
 
@@ -171,7 +169,7 @@ function GoogleBusiness() {
           <FadeIn>
             <div className="section-header">
               <h2>Hvorfor Google Bedriftsprofil?</h2>
-              <p>Det er gratis, men verdien er enorm</p>
+              <p>Det er gratis å opprette, men verdien er enorm med riktig informasjon</p>
             </div>
           </FadeIn>
           <StaggerContainer className="benefits-grid" staggerDelay={0.15}>
