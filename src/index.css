@@ -407,6 +407,7 @@ h4 { font-size: var(--font-size-lg); }
     visibility: hidden;
     transition: all var(--transition-base);
     border-bottom: 1px solid var(--color-border);
+    overflow-x: hidden;
   }
 
   .nav-links.open {
@@ -418,6 +419,7 @@ h4 { font-size: var(--font-size-lg); }
   /* Mobile dropdown */
   .dropdown-menu {
     position: static;
+    left: auto;
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -430,6 +432,8 @@ h4 { font-size: var(--font-size-lg); }
     max-height: 0;
     overflow: hidden;
     transition: max-height var(--transition-base);
+    min-width: auto;
+    width: 100%;
   }
 
   .dropdown-menu.open {
