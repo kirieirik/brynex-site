@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hjem from './pages/Hjem'
@@ -12,9 +13,20 @@ import Kontakt from './pages/Kontakt'
 import Personvern from './pages/Personvern'
 import NotFound from './pages/NotFound'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>

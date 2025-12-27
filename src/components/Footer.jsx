@@ -41,15 +41,15 @@ function Footer() {
           <ul className="footer-contact">
             <li>
               <Mail size={16} />
-              <a href="mailto:kontakt@brynex.no">kontakt@brynex.no</a>
+              <a href="mailto:kontakt@brynex.no">post@brynex.no</a>
             </li>
             <li>
               <Phone size={16} />
-              <a href="tel:+4712345678">+47 123 45 678</a>
+              <a href="tel:+4746863428">+47 468 63 428</a>
             </li>
             <li>
               <MapPin size={16} />
-              <span>Norge</span>
+              <span>1544, Vestby, Norge</span>
             </li>
           </ul>
         </div>

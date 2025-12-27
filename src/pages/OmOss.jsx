@@ -11,6 +11,7 @@ import {
   Rocket
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import compilingImg from '../assets/compiling.PNG'
 
 function OmOss() {
   const values = [
@@ -88,10 +89,7 @@ function OmOss() {
             </FadeInLeft>
             <FadeInRight className="story-image">
               <div className="story-image-placeholder">
-                <div className="placeholder-content">
-                  <span className="placeholder-icon">🚀</span>
-                  <span>Brynex AS</span>
-                </div>
+                <img src={compilingImg} alt="Brynex AS" className="story-img" />
               </div>
             </FadeInRight>
           </div>
@@ -191,7 +189,7 @@ function OmOss() {
           <FadeIn>
             <div className="cta-content">
               <h2>La oss jobbe sammen</h2>
-              <p>Har du et prosjekt i tankene? Vi vil gjerne høre fra deg.</p>
+              <p>Har du et prosjekt i tankene? Ta kontakt!</p>
               <Link to="/kontakt" className="btn btn-primary btn-large">
                 Ta kontakt
                 <ArrowRight size={20} />

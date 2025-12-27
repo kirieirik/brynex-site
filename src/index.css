@@ -1249,7 +1249,7 @@ h4 { font-size: var(--font-size-lg); }
   top: var(--space-lg);
   right: var(--space-lg);
   color: var(--color-primary);
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .testimonial-rating {
