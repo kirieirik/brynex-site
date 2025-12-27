@@ -418,9 +418,9 @@ h4 { font-size: var(--font-size-lg); }
 
   /* Mobile dropdown */
   .dropdown-menu {
-    position: static;
-    left: auto;
-    transform: none;
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
     opacity: 1;
     visibility: visible;
     background: var(--color-bg-tertiary);
@@ -438,6 +438,7 @@ h4 { font-size: var(--font-size-lg); }
 
   .dropdown-menu.open {
     max-height: 300px;
+    transform: none !important;
   }
 
   .nav-dropdown {
