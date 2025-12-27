@@ -15,8 +15,14 @@ import {
   Smartphone
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function Nettbutikker() {
+  useSEO({
+    title: 'Nettbutikker',
+    description: 'Komplette e-handelsløsninger for B2B og B2C. Vi bygger nettbutikker med WooCommerce som selger og konverterer.'
+  })
+
   const features = [
     {
       icon: CreditCard,

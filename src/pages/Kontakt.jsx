@@ -1,8 +1,14 @@
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
 import { FadeInLeft, FadeInRight, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function Kontakt() {
+  useSEO({
+    title: 'Kontakt',
+    description: 'Ta kontakt med Brynex AS for et uforpliktende tilbud. Vi hjelper deg med nettsider, nettbutikker og digital markedsføring.'
+  })
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

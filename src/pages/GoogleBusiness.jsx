@@ -14,8 +14,14 @@ import {
   Users
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function GoogleBusiness() {
+  useSEO({
+    title: 'Google Business',
+    description: 'Optimaliser din Google Bedriftsprofil og bli mer synlig lokalt. Vi hjelper deg å få flere kunder gjennom Google Søk og Maps.'
+  })
+
   const features = [
     {
       icon: MapPin,

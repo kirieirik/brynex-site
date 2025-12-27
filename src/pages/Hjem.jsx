@@ -3,8 +3,14 @@ import { ArrowRight, Globe, ShoppingCart, Search, TrendingUp } from 'lucide-reac
 import { FadeIn, FadeInLeft, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import Testimonials from '../components/Testimonials'
 import LogoMarquee from '../components/LogoMarquee'
+import { useSEO } from '../hooks/useSEO'
 
 function Hjem() {
+  useSEO({
+    title: null, // Use default title for home page
+    description: 'Brynex AS leverer profesjonelle digitale løsninger. Vi bygger nettsider, nettbutikker og hjelper med Google Business og Google Ads.'
+  })
+
   const highlights = [
     {
       icon: Globe,

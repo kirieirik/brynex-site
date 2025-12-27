@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
 import { Home, ArrowLeft } from 'lucide-react'
 import { FadeIn, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function NotFound() {
+  useSEO({
+    title: '404 - Siden finnes ikke',
+    description: 'Siden du leter etter eksisterer ikke eller har blitt flyttet.'
+  })
+
   return (
     <section className="page-hero not-found-page">
       <div className="container">

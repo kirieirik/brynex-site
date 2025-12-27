@@ -41,7 +41,7 @@ function Footer() {
           <ul className="footer-contact">
             <li>
               <Mail size={16} />
-              <a href="mailto:kontakt@brynex.no">post@brynex.no</a>
+              <a href="mailto:post@brynex.no">post@brynex.no</a>
             </li>
             <li>
               <Phone size={16} />

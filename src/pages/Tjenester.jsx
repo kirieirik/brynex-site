@@ -10,8 +10,14 @@ import {
 } from 'lucide-react'
 import ServiceCard from '../components/ServiceCard'
 import { FadeIn, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function Tjenester() {
+  useSEO({
+    title: 'Tjenester',
+    description: 'Se våre tjenester: Nettsider, nettbutikker, Google Business og Google Ads. Vi hjelper din bedrift å lykkes på nett.'
+  })
+
   const services = [
     {
       icon: Globe,

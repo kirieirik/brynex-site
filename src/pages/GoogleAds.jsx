@@ -14,8 +14,14 @@ import {
   DollarSign
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function GoogleAds() {
+  useSEO({
+    title: 'Google Ads',
+    description: 'Målrettet annonsering på Google som gir resultater. Vi hjelper deg med Søkeannonsering, Display og Shopping-kampanjer.'
+  })
+
   const adTypes = [
     {
       icon: Search,

@@ -1,6 +1,12 @@
 import { FadeIn, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function Personvern() {
+  useSEO({
+    title: 'Personvernerklæring',
+    description: 'Les vår personvernerklæring. Brynex AS tar personvern på alvor og behandler dine data i henhold til GDPR.'
+  })
+
   return (
     <>
       <section className="page-hero">

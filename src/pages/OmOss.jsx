@@ -12,8 +12,14 @@ import {
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import compilingImg from '../assets/compiling.PNG'
+import { useSEO } from '../hooks/useSEO'
 
 function OmOss() {
+  useSEO({
+    title: 'Om oss',
+    description: 'Bli kjent med Brynex AS. Vi er et norsk selskap som brenner for webutvikling og digitale løsninger for bedrifter i hele Norge.'
+  })
+
   const values = [
     {
       icon: Target,

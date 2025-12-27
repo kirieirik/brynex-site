@@ -12,8 +12,14 @@ import {
   CheckCircle
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
+import { useSEO } from '../hooks/useSEO'
 
 function Nettsider() {
+  useSEO({
+    title: 'Nettsider',
+    description: 'Profesjonelle nettsider for bedrifter, klubber og hobbyister. Responsive, raske og SEO-optimaliserte løsninger fra Brynex AS.'
+  })
+
   const features = [
     {
       icon: Monitor,
