@@ -477,6 +477,18 @@ h4 { font-size: var(--font-size-lg); }
 .hero h1 {
   margin-bottom: var(--space-xl);
   letter-spacing: -0.02em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero h1 br {
+    display: none;
+  }
 }
 
 .hero-subtitle {
