@@ -1,0 +1,6 @@
+# Robots.txt for Brynex AS
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://brynex.no/sitemap.xml

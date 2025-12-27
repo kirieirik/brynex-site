@@ -43,8 +43,8 @@ function OmOss() {
   ]
 
   const timeline = [
-    { year: '2024', title: 'Oppstart', description: 'Brynex AS ble grunnlagt med en visjon om å gjøre profesjonell webutvikling tilgjengelig for alle.' },
-    { year: '2024', title: 'Første kunder', description: 'Leverte våre første prosjekter og bygget et solid fundament av fornøyde kunder.' },
+    { year: '2021', title: 'Oppstart', description: 'Brynex AS ble startet på grunn av mange henvendelser, og ett ønske om å hjelpe små og mellomstore bedrifter.' },
+    { year: '2022', title: 'Første kunder', description: 'Leverte våre første prosjekter og bygget et solid fundament av fornøyde kunder.' },
     { year: '2025', title: 'Vekst', description: 'Utvidet tjenestetilbudet til å inkludere e-handel, Google Business og digital markedsføring.' }
   ]
 
@@ -58,7 +58,7 @@ function OmOss() {
           </HeroText>
           <HeroText delay={0.2}>
             <p className="page-subtitle">
-              Vi er lidenskapelig opptatt av å hjelpe bedrifter med å lykkes digitalt. 
+              Vi ønsker å hjelpe deg med å lykkes på nett. I dagens samfunn er det viktigere enn noen gang å ha en sterk digital tilstedeværelse.
               Bli kjent med hvem vi er og hva vi står for.
             </p>
           </HeroText>
@@ -76,14 +76,14 @@ function OmOss() {
                 tilgjengelig for alle – uansett størrelse på bedrift eller budsjett.
               </p>
               <p>
-                Vi så at mange små og mellomstore bedrifter slet med å finne pålitelige 
-                partnere som kunne levere kvalitetsløsninger uten å ta seg betalt som de 
-                store byråene. Det ønsket vi å endre på.
+                Mange små og mellomstore bedrifter sliter med å finne pålitelige 
+                partnere som kan levere kvalitetsløsninger uten å ta seg betalt som de 
+                store byråene. Det ønsker vi å gjøre noe med.
               </p>
               <p>
                 I dag hjelper vi bedrifter, klubber og hobbyister over hele Norge med 
                 alt fra enkle nettsider til komplette e-handelsløsninger. Vi er stolte 
-                av hver eneste kunde vi har fått lov til å hjelpe.
+                av hver eneste kunde vi har fått lov til å hjelpe. Vi priser hvert oppdrag individuelt, og er helt gjennomsiktige med kostnader, og eventuelle abonnement.
               </p>
             </FadeInLeft>
             <FadeInRight className="story-image">

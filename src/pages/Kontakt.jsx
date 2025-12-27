@@ -100,7 +100,7 @@ function Kontakt() {
                     </div>
                     <div>
                       <h4>E-post</h4>
-                      <a href="mailto:kontakt@brynex.no">kontakt@brynex.no</a>
+                      <a href="mailto:post@brynex.no">post@brynex.no</a>
                     </div>
                   </div>
 
@@ -110,7 +110,7 @@ function Kontakt() {
                     </div>
                     <div>
                       <h4>Telefon</h4>
-                      <a href="tel:+4712345678">+47 123 45 678</a>
+                      <a href="tel:+4746863428">+47 468 63 428</a>
                     </div>
                   </div>
 
@@ -120,7 +120,7 @@ function Kontakt() {
                     </div>
                     <div>
                       <h4>Lokasjon</h4>
-                      <span>Norge</span>
+                      <span>1544, Vestby, Norge</span>
                     </div>
                   </div>
                 </div>
