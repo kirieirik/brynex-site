@@ -15,11 +15,14 @@ import {
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import { useSEO } from '../hooks/useSEO'
+import Breadcrumb from '../components/Breadcrumb'
+import FAQSchema from '../components/FAQSchema'
 
 function GoogleAds() {
   useSEO({
     title: 'Google Ads',
-    description: 'Målrettet annonsering på Google som gir resultater. Vi hjelper deg med Søkeannonsering, Display og Shopping-kampanjer.'
+    description: 'Google Ads setup & optimalisering | Målt ROI | Søkeannonsering | Resultater fra dag 1 | Brynex AS',
+    canonicalPath: '/tjenester/google-ads'
   })
 
   const adTypes = [
@@ -133,8 +136,15 @@ function GoogleAds() {
     }
   ]
 
+  const breadcrumbItems = [
+    { path: '/', label: 'Hjem' },
+    { path: '/tjenester', label: 'Tjenester' },
+    { path: '/tjenester/google-ads', label: 'Google Ads' }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="page-hero service-hero">
         <div className="container">
@@ -320,6 +330,30 @@ function GoogleAds() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema items={[
+        {
+          question: 'Hvor raskt får jeg resultater fra Google Ads?',
+          answer: 'Annonserene dine går live samme dag. Første trafikk innen timer. Første konverteringer innen 24-48 timer. Optimal optimalisering tar 2-4 uker.'
+        },
+        {
+          question: 'Hva må jeg betale?',
+          answer: 'Du betaler for hver klikk (PPC). Prisen per klikk avhenger av konkurranse og søkeord. Vi startet gjerne med 5.000-10.000 kr/måned budget som anbefaling.'
+        },
+        {
+          question: 'Hva er Google Ads gebyr?',
+          answer: 'Vi tar 15-20% av dine annonsekostnader, eller et flat gebyr fra 3.900 kr/måned. Første måned er ofte gratis oppstartsgebyr.'
+        },
+        {
+          question: 'Kan jeg styre Google Ads selv?',
+          answer: 'Ikke anbefalt. Du risikerer å bruke budsjett ineffektivt og få dårlig ROI. Vi gjør det daglige jobben som søkeordoptimalisering, budsjettallokering og annonsekopi-testing.'
+        },
+        {
+          question: 'Hvordan vet jeg at det fungerer?',
+          answer: 'Vi gir ugentlig rapporter som viser: antall klikk, konverteringer, kostnad per klikk, ROI, og samlet resultat. Alt er transparent og trackbar via Google Analytics.'
+        }
+      ]} />
 
       {/* CTA Section */}
       <section className="cta-section">

@@ -13,11 +13,14 @@ import {
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import { useSEO } from '../hooks/useSEO'
+import Breadcrumb from '../components/Breadcrumb'
+import FAQSchema from '../components/FAQSchema'
 
 function Nettsider() {
   useSEO({
     title: 'Nettsider',
-    description: 'Profesjonelle nettsider for bedrifter, klubber og hobbyister. Responsive, raske og SEO-optimaliserte løsninger fra Brynex AS.'
+    description: 'Profesjonelle nettsider for bedrifter | SEO-optimalisert | Responsive design | Rask lansering | Brynex AS',
+    canonicalPath: '/tjenester/nettsider'
   })
 
   const features = [
@@ -91,8 +94,15 @@ function Nettsider() {
     '30 dager support etter lansering'
   ]
 
+  const breadcrumbItems = [
+    { path: '/', label: 'Hjem' },
+    { path: '/tjenester', label: 'Tjenester' },
+    { path: '/tjenester/nettsider', label: 'Nettsider' }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="page-hero service-hero">
         <div className="container">
@@ -232,6 +242,34 @@ function Nettsider() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema items={[
+        {
+          question: 'Hva inkluderer nettsidepakken?',
+          answer: 'Alle nettsider inkluderer: responsive design, SEO-optimalisering, kontaktskjema, Google Analytics-setup, SSL-sertifikat, mobile-optimalisering, og 6 måneder support og vedlikehold.'
+        },
+        {
+          question: 'Hvor lang tid tar det å lage en nettside?',
+          answer: 'En standard nettside tar 2-4 uker fra start til lansering. Avhenger av kompleksitet og hvor raskt dere responderer på våre spørsmål.'
+        },
+        {
+          question: 'Kan jeg redigere nettsiden selv etter lansering?',
+          answer: 'Ja, hvis vi bygger med WordPress. Hvis vi bygger med React/Next.js, hjelper vi dere til å få tilgang. Vi gir også training på hvordan dere kan oppdatere innhold selv.'
+        },
+        {
+          question: 'Hva med sikkerhet og backup?',
+          answer: 'All hosting er på sikre servere med SSL-kryptering. Vi tar daglige automatiske backups. Hvis noe skjer, kan vi gjenopprette nettsiden på 15 minutter.'
+        },
+        {
+          question: 'Kan jeg ha e-post på mitt domene?',
+          answer: 'Ja, vi setter opp profesjonell e-post med ditt domenenavn (f.eks. hei@bedriften.no). Vi kan høre til å migrere e-post hvis dere hadde det tidligere.'
+        },
+        {
+          question: 'Hva koster vedlikehold etter lansering?',
+          answer: 'Første periode er inkludert. Etter det tilbyr vi vedlikeholdspakker som inkluderer sikkerhetskjemaer, backups og mindre oppdateringer. Ta kontakt for prisdetaljer.'
+        }
+      ]} />
 
       {/* CTA Section */}
       <section className="cta-section">

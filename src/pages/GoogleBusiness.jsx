@@ -15,11 +15,14 @@ import {
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import { useSEO } from '../hooks/useSEO'
+import Breadcrumb from '../components/Breadcrumb'
+import FAQSchema from '../components/FAQSchema'
 
 function GoogleBusiness() {
   useSEO({
     title: 'Google Business',
-    description: 'Optimaliser din Google Bedriftsprofil og bli mer synlig lokalt. Vi hjelper deg å få flere kunder gjennom Google Søk og Maps.'
+    description: 'Google Business optimalisering | Øk synlighet lokalt | Flere anmeldelser | Google Maps ranking | Brynex AS',
+    canonicalPath: '/tjenester/google-business'
   })
 
   const features = [
@@ -104,8 +107,15 @@ function GoogleBusiness() {
     }
   ]
 
+  const breadcrumbItems = [
+    { path: '/', label: 'Hjem' },
+    { path: '/tjenester', label: 'Tjenester' },
+    { path: '/tjenester/google-business', label: 'Google Business' }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="page-hero service-hero">
         <div className="container">
@@ -266,6 +276,30 @@ function GoogleBusiness() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema items={[
+        {
+          question: 'Hva er Google Business?',
+          answer: 'Google Business (tidligere Google Bedriftsprofil) er en gratis tjeneste fra Google som la deg oppstå dine forretningsinformasjon på Google Søk og Maps. Det er essensielt for lokale virksomheter.'
+        },
+        {
+          question: 'Hvordan øker Google Business min trafikk?',
+          answer: 'Når noen søker på "butikk nær meg" eller ditt bedriftsnavn, dukker Google Business-profilen din opp som en av de første resultatene. Du får flere besøkende, anmeldelser og telefonstunder.'
+        },
+        {
+          question: 'Hva skal jeg fylle inn i profilen?',
+          answer: 'Fullt navn på bedrift, adresse, telefonnummer, åpningstider, kategori, beskrivelse, og minst 5 professionelle bilder. Jo mer innhold, jo bedre ranking.'
+        },
+        {
+          question: 'Hva er viktigst for Google Business ranking?',
+          answer: 'De tre viktigste faktorene er: 1) Anmeldelser (stjerner og antall), 2) Fullstendig profil, 3) Nærhet til søkeren. Jo flere anmeldelser du har, jo høyere ranker du.'
+        },
+        {
+          question: 'Hvordan får jeg flere anmeldelser?',
+          answer: 'Vi hjelper deg sette opp automatisk anmeldelsesforespørsel på SMS/email etter kjøp. Vi retter også opp dårlige anmeldelser hvor det er mulig.'
+        }
+      ]} />
 
       {/* CTA Section */}
       <section className="cta-section">

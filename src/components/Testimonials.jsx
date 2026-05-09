@@ -1,5 +1,6 @@
 import { Star, Quote } from 'lucide-react'
 import { StaggerContainer, StaggerItem, FadeIn } from './Animations'
+import AggregateRatingSchema from './AggregateRatingSchema'
 
 function Testimonials() {
   const testimonials = [
@@ -37,45 +38,49 @@ function Testimonials() {
   }
 
   return (
-    <section className="testimonials-section">
-      <div className="container">
-        <FadeIn>
-          <div className="section-header">
-            <h2>Hva kundene sier</h2>
-            <p>Vi er stolte av å levere løsninger som kundene våre har behov for</p>
-          </div>
-        </FadeIn>
+    <>
+      <AggregateRatingSchema rating={5} reviewCount={3} ratingCount={3} />
+      
+      <section className="testimonials-section">
+        <div className="container">
+          <FadeIn>
+            <div className="section-header">
+              <h2>Hva kundene sier</h2>
+              <p>Vi er stolte av å levere løsninger som kundene våre har behov for</p>
+            </div>
+          </FadeIn>
 
-        <StaggerContainer className="testimonials-grid" staggerDelay={0.15}>
-          {testimonials.map((testimonial, index) => (
-            <StaggerItem key={index}>
-              <div className="testimonial-card">
-                <div className="testimonial-quote">
-                  <Quote size={32} />
-                </div>
-                <div className="testimonial-rating">
-                  {renderStars(testimonial.rating)}
-                </div>
-                <p className="testimonial-text">{testimonial.text}</p>
-                <div className="testimonial-author">
-                  <div className="testimonial-avatar">
-                    {testimonial.image ? (
-                      <img src={testimonial.image} alt={testimonial.name} />
-                    ) : (
-                      <span>{getInitials(testimonial.name)}</span>
-                    )}
+          <StaggerContainer className="testimonials-grid" staggerDelay={0.15}>
+            {testimonials.map((testimonial, index) => (
+              <StaggerItem key={index}>
+                <div className="testimonial-card">
+                  <div className="testimonial-quote">
+                    <Quote size={32} />
                   </div>
-                  <div className="testimonial-info">
-                    <h4>{testimonial.name}</h4>
-                    <span>{testimonial.company}</span>
+                  <div className="testimonial-rating">
+                    {renderStars(testimonial.rating)}
+                  </div>
+                  <p className="testimonial-text">{testimonial.text}</p>
+                  <div className="testimonial-author">
+                    <div className="testimonial-avatar">
+                      {testimonial.image ? (
+                        <img src={testimonial.image} alt={testimonial.name} />
+                      ) : (
+                        <span>{getInitials(testimonial.name)}</span>
+                      )}
+                    </div>
+                    <div className="testimonial-info">
+                      <h4>{testimonial.name}</h4>
+                      <span>{testimonial.company}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
-      </div>
-    </section>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </div>
+      </section>
+    </>
   )
 }
 

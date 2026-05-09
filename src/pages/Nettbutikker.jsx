@@ -16,11 +16,14 @@ import {
 } from 'lucide-react'
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import { useSEO } from '../hooks/useSEO'
+import Breadcrumb from '../components/Breadcrumb'
+import FAQSchema from '../components/FAQSchema'
 
 function Nettbutikker() {
   useSEO({
     title: 'Nettbutikker',
-    description: 'Komplette e-handelsløsninger for B2B og B2C. Vi bygger nettbutikker med WooCommerce som selger og konverterer.'
+    description: 'Nettbutikk setup | WooCommerce & Shopify | Sikre betalinger | E-handel løsning for SMB | Brynex AS',
+    canonicalPath: '/tjenester/nettbutikker'
   })
 
   const features = [
@@ -93,8 +96,15 @@ function Nettbutikker() {
     }
   ]
 
+  const breadcrumbItems = [
+    { path: '/', label: 'Hjem' },
+    { path: '/tjenester', label: 'Tjenester' },
+    { path: '/tjenester/nettbutikker', label: 'Nettbutikker' }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="page-hero service-hero">
         <div className="container">
@@ -252,6 +262,30 @@ function Nettbutikker() {
           </StaggerContainer>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema items={[
+        {
+          question: 'Hva er best for min nettbutikk - WooCommerce eller Shopify?',
+          answer: 'WooCommerce er best hvis du ønsker kontroll, lavere gebyrer på lang sikt og ingen binding. Shopify er best hvis du vil minimalt arbeid og raskt oppsett. Vi hjelper deg velge basert på dine behov og budget.'
+        },
+        {
+          question: 'Hva koster det å starte en nettbutikk?',
+          answer: 'En nettbutikk med WooCommerce koster fra 24.900 kr inkludert design, setup og SEO. Shopify starter fra 29 kr/måned, men med provisjonsgebyr på salg blir det dyrere over tid.'
+        },
+        {
+          question: 'Kan jeg migrere fra min eksisterende butikk?',
+          answer: 'Ja, vi kan migrere fra Shopify, WooCommerce, eller andre plattformer uten å miste ordre eller kundedata. Migrasjon er inkludert i prisen.'
+        },
+        {
+          question: 'Hvilke betalingsmetoder støttes?',
+          answer: 'Vi setter opp alle populære metoder: Vipps, Klarna, Stripe, PayPal og kortbetaling. Vipps er anbefalt fordi det er mest brukt i Norge.'
+        },
+        {
+          question: 'Kan jeg selge både B2B og B2C?',
+          answer: 'Ja, vi kan sette opp separate prisstrukturer, rabatter og betingelser for bedrifter. Du kan også ha B2B-portaler hvor kunder logger inn med egne priser.'
+        }
+      ]} />
 
       {/* CTA Section */}
       <section className="cta-section">

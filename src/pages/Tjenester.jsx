@@ -15,7 +15,8 @@ import { useSEO } from '../hooks/useSEO'
 function Tjenester() {
   useSEO({
     title: 'Tjenester',
-    description: 'Se våre tjenester: Nettsider, nettbutikker, Google Business og Google Ads. Vi hjelper din bedrift å lykkes på nett.'
+    description: 'Se alle tjenester fra Brynex: nettsider, nettbutikker, Google Business og Google Ads. Skreddersydde løsninger for bedrifter i Norge.',
+    canonicalPath: '/tjenester'
   })
 
   const services = [

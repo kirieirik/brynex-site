@@ -13,11 +13,13 @@ import {
 import { FadeIn, FadeInLeft, FadeInRight, StaggerContainer, StaggerItem, HeroText } from '../components/Animations'
 import compilingImg from '../assets/compiling.PNG'
 import { useSEO } from '../hooks/useSEO'
+import Breadcrumb from '../components/Breadcrumb'
 
 function OmOss() {
   useSEO({
     title: 'Om oss',
-    description: 'Bli kjent med Brynex AS. Vi er et norsk selskap som brenner for webutvikling og digitale løsninger for bedrifter i hele Norge.'
+    description: 'Om Brynex AS: Norsk webbyrå som leverer nettsider, nettbutikker og digital markedsføring. Team med 5+ års erfaring. Basert i Oslo.',
+    canonicalPath: '/om-oss'
   })
 
   const values = [
@@ -55,8 +57,14 @@ function OmOss() {
     { year: '2025', title: 'Vekst', description: 'Utvidet tjenestetilbudet til å inkludere e-handel, Google Business og digital markedsføring.' }
   ]
 
+  const breadcrumbItems = [
+    { path: '/', label: 'Hjem' },
+    { path: '/om-oss', label: 'Om oss' }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="page-hero about-hero">
         <div className="container">

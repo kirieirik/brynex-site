@@ -8,7 +8,8 @@ import { useSEO } from '../hooks/useSEO'
 function Hjem() {
   useSEO({
     title: null, // Use default title for home page
-    description: 'Brynex AS leverer profesjonelle digitale løsninger. Vi bygger nettsider, nettbutikker og hjelper med Google Business og Google Ads.'
+    description: 'Brynex AS leverer digitale løsninger for bedrifter: moderne nettsider fra 8.900kr, nettbutikker, Google Ads og lokal SEO. Raskere leveranse, bedre resultater.',
+    canonicalPath: '/'
   })
 
   const highlights = [
